@@ -72,11 +72,19 @@ red_flags = [
     ]
     
 
-def get_job_text():
-    print("Please input job text now:")
-    job_text = input()
-    return job_text
 
-def get_formatted_job_list(job_text):
-    formatted_job_list = job_text.lower().split()
-    return formatted_job_list
+##Output number of green flags
+def determine_green_flags(job_text, green_flags_list):
+    green_flags_set = set() ## I want each keyword to count only once, so i am using a set rather than a list
+    for word in job_text.strip().lower():
+        if word in green_flags_list:
+            green_flags_set.add(word)
+    return green_flags_set
+
+def main(): ## a mock structure to test the determine_green_flags function
+    job_text = input("Please enter job text here:")
+    green_flags_set = determine_green_flags(job_text)
+    score = len(green_flags_set)
+    print(f"Score: {score}")
+
+main()
