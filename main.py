@@ -72,37 +72,42 @@ red_flags = [
     ]
     
 
-
-##Output number of green flags
-def determine_green_flags(job_text, green_flags_list):
+def get_green_flags(job_text, green_flags_list):
     green_flags_set = set() ## I want each keyword to count only once, so i am using a set rather than a list
-    job_keyword_list = job_text.lower().split(" ")
+    job_keyword_list = job_text.split(" ")
     for word in job_keyword_list:
         if word in green_flags_list:
             green_flags_set.add(word)
     return green_flags_set
 
-def determine_red_flags(job_text, red_flags_criteria):
-    ##Take the jobtext, keep it as a string, interate through each red flag phrase and check for it in the job text string
-    red_flag_list = []
+def get_red_flags(job_text, red_flags_criteria):
+    red_flag_matches = [] ## since each red_flag is checked against job_text only once, duplicates are impossible and so i've used a list here for simplicity
     for red_flag in red_flags_criteria:
         if red_flag in job_text:
-            red_flag_list.append(red_flag)
-    return red_flag_list
+            red_flag_matches.append(red_flag)
+    return red_flag_matches
 
 def format_keywords(color, flag_list):
-    formatted_keyword_list = ", ".join(list(flag_list)) + "."
+    formatted_keyword_list = ", ".join(list(flag_list))
+    if len(formatted_keyword_list) >= 1:
+        formatted_keyword_list += "."
     print(f"{color} Flags: {formatted_keyword_list}")
 
-def get_score_string(flag_list):
-    score = len(flag_list)
-    return f"Score: {score}"
+def print_score_summary(green_list, red_list):
+    green_score = len(green_list) 
+    red_score = len(red_list)
+    total_score = green_score - red_score ## For now I am using a straight 1-1 scoring system. Later iterations will give weighting and even include "deal-breakers"
+    print(f"Green Flags: {green_score}\nRed Flags: {red_score}\nFinal Score: {total_score}")
 
-def main(): ## a mock structure to test the determine_green_flags function
-    job_text = input("Please enter job text here:")
-    green_flags_set = determine_green_flags(job_text, green_flags)
-    
+def main(): 
+    job_text = input("Please enter job text here:").lower()
+    green_flags_set = get_green_flags(job_text, green_flags)
+    red_flags_list = get_red_flags(job_text, red_flags)
+
+    print("\n\n----------RESULT----------")
     format_keywords("Green", green_flags_set)
-    print(get_score_string(green_flags_set))
+    format_keywords("Red", red_flags_list)
+    print_score_summary(green_flags_set, red_flags_list)
+
 
 main()
