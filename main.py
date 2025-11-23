@@ -82,17 +82,27 @@ def determine_green_flags(job_text, green_flags_list):
             green_flags_set.add(word)
     return green_flags_set
 
+def determine_red_flags(job_text, red_flags_criteria):
+    ##Take the jobtext, keep it as a string, interate through each red flag phrase and check for it in the job text string
+    red_flag_list = []
+    for red_flag in red_flags_criteria:
+        if red_flag in job_text:
+            red_flag_list.append(red_flag)
+    return red_flag_list
+
+def format_keywords(color, flag_list):
+    formatted_keyword_list = ", ".join(list(flag_list)) + "."
+    print(f"{color} Flags: {formatted_keyword_list}")
+
+def get_score_string(flag_list):
+    score = len(flag_list)
+    return f"Score: {score}"
+
 def main(): ## a mock structure to test the determine_green_flags function
     job_text = input("Please enter job text here:")
     green_flags_set = determine_green_flags(job_text, green_flags)
     
-
-    ## Format and print matching keywords and score
-    formatted_keyword_list = ", ".join(list(green_flags_set)) + "."
-    print(f"Matching Keywords: {formatted_keyword_list}")
-    
-    
-    score = len(green_flags_set)
-    print(f"Score: {score}")
+    format_keywords("Green", green_flags_set)
+    print(get_score_string(green_flags_set))
 
 main()
