@@ -1,0 +1,31 @@
+Full job description
+About the Role
+
+We are seeking a Senior Automation Engineer with strong expertise in backend API automation, particularly in Java, REST Assured, and cloud-based testing tools. The ideal candidate will play a key role in designing and implementing robust automation frameworks, ensuring high-quality API validation, and collaborating closely with development and QA teams to drive excellence across our software delivery lifecycle.
+
+Responsibilities
+
+Design, develop, and maintain automation frameworks for backend API testing using Java and Selenium.
+Build and execute comprehensive API test cases, covering functional, regression, and performance aspects.
+Utilize tools like Jira to manage test cases, track defects, and ensure traceability.
+Integrate API automation into CI/CD pipelines for seamless execution.
+Work with AWS services to validate APIs in cloud-native environments.
+Collaborate with developers, product managers, and QA to define automation strategies and improve product quality.
+Mentor junior team members in automation best practices.
+Provide detailed reporting and analysis of test execution results, ensuring issues are identified and resolved quickly.
+Must-Have Skills
+
+6+ years of experience in automation engineering, with a focus on API testing.
+Strong hands-on experience in Java and Selenium framework.
+Proficiency in API testing methodologies and validation strategies
+Expertise with Jira for defect tracking and test management.
+Working knowledge of AWS services related to API hosting, monitoring, or testing.
+Solid understanding of CI/CD pipelines and integrating automated tests.
+Strong debugging and problem-solving skills.
+Nice-to-Have Skills
+
+Familiarity with additional test automation frameworks (e.g., Postman/Newman, Karate).
+Exposure to performance testing of APIs.
+Experience with containerized environments (Docker/Kubernetes).
+Knowledge of agile methodologies and DevOps practices.
+Job Type: contracting Full TimeJob Location: Remote

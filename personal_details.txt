@@ -1,0 +1,61 @@
+Experience & Skills:
+
+Entry-level QA with hands-on practice in manual testing, exploratory testing, bug reporting, user-flow analysis, and heuristic UX observation.
+
+Completion of multiple structured QA test-suites, including a full project on KarateByJesse with 47+ scenarios, detailed notes, and user-flow analysis.
+
+
+ISTQB Foundation Level certified.
+
+Strong documentation skills, including clear reproduction steps, structured notes, and concise defect summaries.
+
+Solid beginner Python skills, with ability to write small scripts, automate simple tasks, and understand core logic structures.
+
+
+Portfolio:
+
+Includes a professional QA test suite with scenario-based testing, heuristic analysis, summaries, and layout.
+
+Argus (your are responding to this prompt as part of the argus process) is part of the portfolio: a job suitability analyzer demonstrating Python competency, problem decomposition, and practical automation thinking.
+
+smaller “tall slice” QA project demonstrating targeted testing of key features on a second website.
+
+Public GitHub with clean commit history and focus on clarity over cleverness.
+
+Work Environment Needs & Preferences:
+
+Strong preference for remote work due to autistic sensory constraints, but willing to accept on-site or hybrid work for first QA role.
+
+Performs best with clear expectations, predictable communication, and consistent workflows.
+
+Highly team-oriented when collaboration is structured, respectful, and aligned with shared goals.
+
+Avoids “hustle culture,” toxic positivity, and expectations of unpaid overtime.
+
+Thrives in ethical, inclusive, process-oriented environments where communication is honest and stable.
+
+Requires workplaces that respect boundaries and value psychological safety.
+
+Strengths & Advantages for Employers:
+
+Detects edge cases, ambiguity, and unexpected behavior quickly.
+
+Extremely strong pattern recognition and systems thinking.
+
+High output on focused tasks, strong follow-through, and reliable execution.
+
+Deep intrinsic motivation for quality, correctness, and fairness.
+
+Naturally suited for testing due to curiosity, skepticism, and structured analytical thinking.
+
+Clear communicator when expectations and goals are defined.
+
+Constraints & Red Lines:
+
+Avoids roles emphasizing “fast-paced,” “move fast and break things,” “rockstar,” “wear many hats,” or “high-pressure environment.”
+
+Avoids sales-like, socially performative, or extroversion-dependent roles.
+
+Cannot sustain unpredictable, chaotic environments or workplaces with inconsistent ethics.
+
+Requires reasonable workloads without glorification of burnout.
